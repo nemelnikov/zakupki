@@ -4,14 +4,43 @@ ru:
   save: 'Сохранить'
   edit: 'Редактировать'
   delete: 'Удалить'
+  show: 'Показать'
+  number: 'Номер'
+  actions: 'Действия'
+  search: 'Поиск'
+  reset: 'Сбросить'
+  back: 'Назад'
   purchase:
     title: 'Закупка'
     new: 'Новая закупка'
     edit: 'Редактирование закупки'
     deletion_confirm: 'Закупка будет удалена. Вы уверены, что хотите продолжить?'
     end_date: 'Дата окончания данной закупки: '
+    status: 'Статус'
+    statuses:
+      opened: 'Открыта'
+      funding: 'Сбор средств'
+      awaiting: 'Ожидание заказа от поставщика'
+      distributing: 'Раздача'
+      closed: 'Закрыта'
+  group:
+    title: 'Группа'
+    city: 'Город'
+    name: 'Название группы'
+    description: 'Описание группы'
+    enabled: 'Группа доступна'
+    new: 'Новая группа'
+    created: 'Группа успешно создана'
+    updated: 'Группа успешно обновлена'
+    deleted: 'Группа успешно удалена'
+    participants: 'Участников'
+    active_purchases_count: 'Количество активных закупок'
+    join: 'Присоединиться'
+    leave: 'Покинуть'
   profile:
     edit_profile: 'Изменение профиля'
+    password_changed: 'Пароль изменён'
+    change_password: 'Сменить пароль'
   activerecord:
     attributes:
       purchase:
@@ -20,9 +49,10 @@ ru:
         description: 'Описание'
       user:
         password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+        current_password: 'Текущий пароль'
         email: 'E-mail'
         remember_me: 'Запомнить меня'
-        password_confirmation: 'Подтверждение пароля'
         username: 'Имя'
         phone: 'Телефон'
     errors:
@@ -31,3 +61,10 @@ ru:
           attributes:
             email:
               taken: 'Этот e-mail уже занят'
+            current_password:
+              blank: 'Не введён текущий пароль'
+              invalid: 'Не верный текущий пароль'
+            password_confirmation:
+              confirmation: 'Пароли не совпадают'
+            password:
+              too_short: 'Пароль слишком короткий'
